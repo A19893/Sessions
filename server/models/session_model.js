@@ -9,10 +9,6 @@ const Session = new mongoose.Schema({
         type: String,
         unique: true,
         required:true,
-    },
-    logged_in_devices:{
-        type: Number,
-        default: 1,
     }
 },{timestamps: true})
 

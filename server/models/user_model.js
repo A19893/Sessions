@@ -18,6 +18,14 @@ const User = new mongoose.Schema({
     password:{
         type: String,
         required:true,
+    },
+    isActive:{
+        type: Boolean,
+        // required: true
+    },
+    loggedInDevices:{
+        type: Number,
+        // required: true
     }
 },{timestamps: true})
 
